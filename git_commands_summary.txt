@@ -1,0 +1,94 @@
+clear
+	Clears the screen
+
+\ 
+	if a space or special character is part of a file name or directory, use 
+	backslash "\" in order to signify to the bash that they are one piece
+	Ex. cd Program\ Files
+
+cd <directoryname>
+	Goes into the specified directory name
+	Ex. cd asteroids
+
+cd c 
+	Goes into the main C drive
+
+cd ~
+	Takes you to the home directory
+
+cd
+	Goes out of the current directory into the parent folder.
+
+mv <From file_location1/file_name1> <To file_location2/file_name2>
+	Moves the file "From" folder1 "To" folder2. 
+	file_name1 can be changed to file_name2 while moving.
+	If the second file location is not sepcified, it wil be moved into current folder. 
+	Ex. mv version-control/git-completion.bash.txt git-completion.bash
+
+git --version
+	Shows the version of the git installation.
+
+git help <command>
+	Present the help file for the selected command in the default browser.
+	Ex. git help diff
+
+git clone <github repository link>
+	Downloads all the files and their commits (history).
+	Ex. git clone https://github.com/udacity/asteroids.git
+
+ls
+	Lists all the files and folders in the current directory
+
+la -a
+	List all the files and folders including hidden ones in the current directory
+
+cd <directory name>
+	Goes into the specified directory name
+	Ex. cd asteroids
+
+cd
+	Goes out of the current directory into the parent folder.
+
+git config --global color.ui auto
+	Will output colored "diff" results.
+
+git log     
+	Shows a list of the recent commits IDs, their time-date, information about commits
+q
+	Press "q" to stop viewing the output of git log.
+
+git diff <commit ID1> <commit ID2>
+	Compares the two versions of code in the commits
+
+NOTE:
+	Most of the time it is enough to enter the first few characters of the commit ID rather than copying and pasting the entire ID. Ex. 4 - 5 chars.
+
+git checkout <commit ID>
+	Resets all the files in the repository back to the selected commit ID.
+
+
+vim <filename>
+	Opens the filename in text format in the bash.
+	Ex. vim game.js
+
+:x
+	Exits from the opened text file without saving.
+
+
+
+git init
+	Initializes the git repository for the urrent directory. 
+	No commits are created.
+
+git status
+	Gives a git report suchas branch, master, files etc.
+
+git add <filename>
+	Adds the file to the staging area. 
+	The files in the staging area will be the ones to be commited later on.
+
+git rm <filename>
+	Removes the file from the staging area. This file will not be included in the commits.
+
+git reset
+	Removes all the files from the staging area.
