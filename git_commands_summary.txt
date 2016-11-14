@@ -32,6 +32,9 @@ git help <command>
 	Present the help file for the selected command in the default browser.
 	Ex. git help diff
 
+git help git
+	Display help index
+
 git clone <github repository link>
 	Downloads all the files and their commits (history).
 	Ex. git clone https://github.com/udacity/asteroids.git
@@ -91,4 +94,47 @@ git rm <filename>
 	Removes the file from the staging area. This file will not be included in the commits.
 
 git reset
-	Removes all the files from the staging area.
+	Removes all the files from the staging area
+
+subl -h
+	Show the options for sublime text
+
+git diff
+	Show the difference between files located in the staged area and the working area
+
+git diff --staged
+	Show the differnces between the files located in the staged area and the commit area.
+
+
+Branching
+
+git branch
+	Shows the current branches
+	Active branch is shown with a star.
+
+git branch <branch name>
+	Creates a new branch.
+
+git checkout <branch name>
+	Activate the selected branch
+
+git log --graph
+	Visualize the commits in branch structure
+
+git log --graph --oneline
+	Visualize the commits in branch structure concisely.
+
+git checkout -b <new_branch_name>
+	Create a new brnach from a previous commit
+	
+
+Lesson 3: Github
+
+git remote
+	Adds a remote to git that will be used for connecting with github
+
+git remote add <name>
+
+
+github connection through ssh
+https://help.github.com/articles/generating-an-ssh-key/
